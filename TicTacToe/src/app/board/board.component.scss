@@ -1,8 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  position: relative;
+}
+
 main {
+  position: absolute;
   display: grid;
   grid-template-columns: 200px 200px 200px;
   grid-gap: 0px;
-  margin-left: 40em;
+  margin-top: 20px;
+  margin-left: 50%;
+  transform: translateX(-56%);
 }
 
 app-square {
@@ -11,11 +25,9 @@ app-square {
   border-radius: 5px;
 }
 
-.start-btn {
-  margin-bottom: 40px;
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
-
-.winner-text {
-  margin-top: -20px;
-}
-
