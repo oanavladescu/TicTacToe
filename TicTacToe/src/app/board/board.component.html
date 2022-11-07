@@ -1,10 +1,14 @@
-<h1>Current Player: {{ player }} </h1>
+<h1 *ngIf="!winner && !isTie">Current Player: {{ player }} </h1>
 
-<button nbButton outline status= "danger" (click)="newGame()" class="start-btn">Start new Game</button>
-
-<h2 *ngIf="winner" class="winner-text">
+<h1 *ngIf="winner">
   Player {{ winner }} won the game!
-</h2>
+</h1>
+
+<h1 *ngIf="isTie && !winner">
+    It's a Tie!
+</h1>
+
+<button nbButton outline status= "danger" (click)="newGame()">Restart Game</button>
 
 <main>
   <app-square 
