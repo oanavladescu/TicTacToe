@@ -1,0 +1,21 @@
+main {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 0px;
+  margin-left: 40em;
+}
+
+app-square {
+  border: 1px gray solid;
+  height: 200px; 
+  border-radius: 5px;
+}
+
+.start-btn {
+  margin-bottom: 40px;
+}
+
+.winner-text {
+  margin-top: -20px;
+}
+
